@@ -17,7 +17,7 @@ function makeElement(tagName, props) {
             // set attributes
             if (key === 'attributes' && typeof value === 'object') {
                 for (let j = 0, attrsKeys = objectKeys(value); j < attrsKeys.length; j++) {
-                    const attrName = attrsKeys[i];
+                    const attrName = attrsKeys[j];
                     const attrValue = value[attrName];
                     el.setAttribute(attrName, attrValue);
                 }
